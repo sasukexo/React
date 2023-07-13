@@ -1,13 +1,13 @@
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
+
 function App(){
-  function handleNameChange(){
-    const name=["guru","ram","sai"];
-    const int=Math.floor(Math.random()*3);
-    return name[int];
-  }
-    return(
+   return(
         <div>
-          <h1>hELLO</h1>
-            <p>Lets {handleNameChange()}</p>
+         <Header/>
+        <Content/>
+        <Footer/>
         </div>
     )
 }
