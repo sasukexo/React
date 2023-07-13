@@ -1,14 +1,17 @@
-import Content from "./Content";
-import Header from "./Header";
+import React from "react";
 
-function App(){
+
+const Content=() =>{
+  function handleNameChange(){
+    const name=["guru","ram","sai"];
+    const int=Math.floor(Math.random()*3);
+    return name[int];
+  }
     return(
-       <div>
-            <Header/>
-            <Content/> 
-       </div>
-);
-    
+        <div>
+            <p>Lets {handleNameChange()}Money</p>
+        </div>
+    )
 }
 
-export default App;
+export default Content;
